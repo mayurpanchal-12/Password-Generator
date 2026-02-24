@@ -6,7 +6,7 @@
 ![Vercel](https://img.shields.io/badge/Vercel-Deployment-black?logo=vercel)
 
 A **modern password generator app** built with **React and Context API**, allowing users to generate **strong and secure passwords**.  
-It also displays **password strength**, keeps **history**, and provides a **guide for creating strong passwords**.
+It also displays **password strength**, keeps **history**, can be used offline as **Progressive Web App(PWA)** and provides a **guide for creating strong passwords**.
 
 ---
 
