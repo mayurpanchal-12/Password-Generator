@@ -9,6 +9,7 @@
 
 A **production-grade Password Generator Single Page Application** built using React and Context API. It demonstrates real-world frontend engineering concepts including **live strength analysis, password history management, PWA install support, inline confirm toasts, and persistent user preferences.**
 
+
 ---
 
 ## 🔗 Live Demo
