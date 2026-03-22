@@ -5,6 +5,8 @@ import PassGen from "./Components/PasswordGenerator";
 import History from "./Components/History";
 import Guide from "./Components/guide";
 import {Toaster} from "react-hot-toast";
+import ErrorBoundary from "./Components/ErrorBoundary";
+import Wildcard from "./Components/wildcard";
 export default function App() {
   return (
     <PasswordProvider>
@@ -17,9 +19,23 @@ export default function App() {
         <Navbar />
         <main className="p-4 sm:p-6 lg:p-8">
         <Routes>
-          <Route path="/" element={<PassGen />} />
-          <Route path="/history" element={<History />} />
-          <Route path="/guide" element={<Guide/>} />
+          <Route path="/" element={
+             <ErrorBoundary>
+              <PassGen />
+             </ErrorBoundary>
+            } />
+          <Route path="/history" element={
+             <ErrorBoundary>
+              <History />
+              </ErrorBoundary>
+                  } />
+
+          <Route path="/guide" element={
+             <ErrorBoundary>
+              <Guide/>
+              </ErrorBoundary>
+            } />
+            <Route path="*" element={<Wildcard/>}/>
         </Routes>
         </main>
         </div>
